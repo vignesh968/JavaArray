@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+  public static void main(String args[]){
+    int x[]={8,2,3,11,7,9,90,21};
+    int y=x.length,temp;
+    for(int j=0;j<y;j++)
+    {
+        for(int s=1;s<(y-j);s++)
+        {
+         if(x[s-1]>x[s])
+         {        temp=x[s-1];
+             x[s-1]=x[s];
+             x[s]=temp;
+         }}    }
+    for(int i=0;i<y;i++)
+    {System.out.print(x[i]+" ");
+    }
+  }
+}
