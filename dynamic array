@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+Vector v=new Vector(5,3);
+v.addElement(new Integer(234));
+v.addElement(new Double(234.44));
+v.addElement(new Boolean(true));
+Enumeration e=v.elements();
+while(e.hasMoreElements())
+{
+    System.out.print(e.nextElement()+" ");
+}
+System.out.println();
+	
+	System.out.println("size="+v.size());
+}
+
+}
+//
+234 234.44 true 
+size=3
