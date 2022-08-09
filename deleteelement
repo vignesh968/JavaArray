@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int a[]={0,34,21,11,23,45,67};
+		int n=a.length-1,j=0;
+		int ab[]=new int[a.length];
+		System.out.println("array before delete");
+		for( int i=0;i<=n;i++)
+		{
+		    ab[j]=a[i];
+		    j++;
+		}
+		System.out.println(Arrays.toString(ab));
+			System.out.println("array after delete");
+			   j=0;
+		int	   ab1[]=new int[a.length-2];
+			for( int i=0;i<=n;i++)
+		{
+		 
+		   if(a[i]!=0&&a[i]!=11)
+		   {
+		      ab1[j]=a[i];
+		    j++; 
+		   }
+		}
+		System.out.println(Arrays.toString(ab1));
+	}
+}
+//output
+array before delete
+[0, 34, 21, 11, 23, 45, 67]
+array after delete
+[34, 21, 23, 45, 67]
+
